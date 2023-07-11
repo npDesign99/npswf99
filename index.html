@@ -330,7 +330,7 @@
                 <li class="buttons" data-filter="port-app">App</li>
                 <li class="buttons" data-filter="port-graphic">Graphics</li>
                 <!-- <li class="buttons" id="morePro"> All projets </li> -->
-                <li id="morePro"><a href="https://www.behance.net/npDesign99" target="_blank">All projets </a></li>
+                <li class="buttons" data-filter="all-pro"> All projets </li>
             </ul>
             <div class="image-container">
                 <a href="image/img-1.jpg" class="image port-uiux">
@@ -400,17 +400,19 @@
                     </div> --
                 </div> -->
             </div>
+
+            <div class="beport-box">
+                <div class="beport-headbox">
+                    Click hear For All Portfolio <br>
+                    <a href="https://www.behance.net/npDesign99" target="_blank">Behance Portfolio</a>
+                </div>
+                <!-- <div class="beport-contbox">
+                    <div class="behance-container"></div>
+                </div> -->
+            </div>
         </div>
 
-        <div class="beport-box">
-                    <div class="beport-headbox">
-                        Click hear For All Portfolio <br>
-                        <a href="https://www.behance.net/npDesign99" target="_blank">Behance Portfolio</a>
-                    </div>
-                    <div class="beport-contbox">
-                        <div class="behance-container"></div>
-                    </div>
-                </div>
+        
 
     </section>
 
@@ -449,9 +451,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
 
     <!-- jQuery Easing lib (optional) -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script> -->
     <!-- Embed Behance Javascript -->
-    <script type="text/javascript" src="js/embed.behance.js"></script>
+    <!-- <script type="text/javascript" src="js/embed.behance.js"></script> -->
 
     <script>
         // -------------- Gallary Style -----------
@@ -485,26 +487,26 @@
             // });
 
             // ---------Behance Script ---------
-            $('.behance-container').embedBehance({
+            // $('.behance-container').embedBehance({
 
-                // behance API Key
-                apiKey: 'wiwQqudJqtfJZJ9U2NEuGzjXg9o59a8j',
-                // Behance Username
-                userName: 'npDesign99', infiniteScrolling: true,
+            //     // behance API Key
+            //     apiKey: 'wiwQqudJqtfJZJ9U2NEuGzjXg9o59a8j',
+            //     // Behance Username
+            //     userName: 'npDesign99', infiniteScrolling: true,
 
-                owners: false,
-                appreciations: false,
-                views: false,
-                publishedDate: false,
-                // projectUrl: true,
-                // fields: true,
-                // itemsPerPage: '9',
-                // imageCaption: false,
-                // ownerLink: false,
-                // description: false,
-                // tags: false,
+            //     owners: false,
+            //     appreciations: false,
+            //     views: false,
+            //     publishedDate: false,
+            //     // projectUrl: true,
+            //     // fields: true,
+            //     // itemsPerPage: '9',
+            //     // imageCaption: false,
+            //     // ownerLink: false,
+            //     // description: false,
+            //     // tags: false,
 
-            });
+            // });
 
 
         });
