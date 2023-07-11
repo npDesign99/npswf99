@@ -930,13 +930,20 @@ section {
     border-radius: 0.5rem;
     box-shadow: var(--box-shadow);
     padding: 1rem;
-    /* display: none; */
+    display: none;
 }
 
 .portfolio .beport-box .beport-headbox {
+    display: inline-block;
+    vertical-align: middle;
     text-align: center;
-    margin-bottom: 0.8em;
+    /* margin-bottom: 0.8em; */
     font-size: 1.3rem;
+    width: 48%;
+}
+.portfolio .beport-box .beport-headbox img.icon {
+    height:auto;
+    width: 30%;
 }
 
 /*======================================================================= CONTACT FORM =--------------------*/
@@ -1117,6 +1124,7 @@ section {
         flex-basis: 48% !important;
         font-size: 0.8em;
     }
+    .portfolio .beport-box .beport-headbox img.icon {width: 60%;}
 
 }
 
