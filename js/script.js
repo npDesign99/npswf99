@@ -24,24 +24,24 @@ themeToggler.onclick = () => {
 }
 
 // --------------------START - Half Round ProgressBar Script ---------------
-$(document).ready(function () {
-    $(".halfR-progress").each(function () {
-        var $bar = $(this).find(".halfRbar");
-        var $val = $(this).find("span");
-        var perc = parseInt($val.text(), 10);
-        $({ p: 0 }).animate({ p: perc }, {
-            duration: 3000,
-            easing: "swing",
-            step: function (p) {
-                $bar.css({
-                    transform: "rotate(" + (45 + (p * 1.8)) + "deg)", // 100%=180° so: ° = % * 1.8
-                    // 45 is to add the needed rotation to have the green borders at the bottom
-                });
-                $val.text(p | 0);
-            }
-        });
-    });
-});
+// $(document).ready(function () {
+//     $(".halfR-progress").each(function () {
+//         var $bar = $(this).find(".halfRbar");
+//         var $val = $(this).find("span");
+//         var perc = parseInt($val.text(), 10);
+//         $({ p: 0 }).animate({ p: perc }, {
+//             duration: 3000,
+//             easing: "swing",
+//             step: function (p) {
+//                 $bar.css({
+//                     transform: "rotate(" + (45 + (p * 1.8)) + "deg)", // 100%=180° so: ° = % * 1.8
+//                     // 45 is to add the needed rotation to have the green borders at the bottom
+//                 });
+//                 $val.text(p | 0);
+//             }
+//         });
+//     });
+// });
 // --------------------END - Half Round ProgressBar Script ---------------
 
 // =============================================================== Typing Text START -------------------------------------
