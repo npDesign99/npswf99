@@ -18,7 +18,8 @@ background: linear-gradient(145deg, var(--lg-clr-1) 0%, var(--lg-clr-2) 100%); *
 
 :root {
     /* --primary:#0053d9; */
-    --primary: #6E03A0;
+    /* --primary: #6E03A0; */
+    --primary: #6200a9;
     --black: #444;
     --black2: #000;
     --light-color: #777;
@@ -245,14 +246,7 @@ section {
 .mob-user-head {
     display: none;
     text-align: center;
-    /* align-items: center; */
-    /* position: fixed; */
-    /* top: 0; */
     width: 100%;
-    /* z-index: 999; */
-    /* background: var(--bg-color); */
-    /* box-shadow:var(--box-shadow); */
-    /* padding: 0.5em 0.8em; */
     order: 1;
     justify-content: center;
 }
@@ -273,7 +267,7 @@ section {
 }
 
 .mob-user-head h3 {
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: 400;
     margin-top: 2rem;
     color: var(--black);
@@ -285,7 +279,7 @@ section {
 }
 
 .mob-user-head a {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-weight: 400;
 }
 
@@ -369,7 +363,8 @@ section {
 
 .home a.cvbtn,
 .home a.contbtn {
-    width: 45%;
+    width: 46%;
+    padding: 10px 5px;
     /*border: 1px solid var(--primary);*/
 }
 
@@ -420,11 +415,6 @@ section {
     border-bottom: 1px dashed rgba(0, 0, 0, .2);
     margin-bottom: 8px;
     padding-right: 15px;
-    /* background-image: linear-gradient(var(--primary),var(--primary)); */
-    /* background-size: 18% 100%; */
-    /* background-repeat: no-repeat; */
-    /* transition: .4s; */
-    /* border-radius: 1rem; */
     color: var(--black);
 }
 
@@ -441,25 +431,10 @@ section {
     /* box-shadow: var(--box-shadow); */
     padding: 3px 12px 3px 0;
     font-weight: 600;
-    /* background:var(--primary); */
-    /* color:#fff; */
 }
-
-/* .about .row .box-container .box h3{
-font-size: 2rem;
-color:var(--black);
-line-height: 1.1;
-} */
-
-/* .about .row .box-container .box p{
-font-size: 1.1rem;
-color:var(--light-color);
-padding:.5rem 0;
-} */
 
 .about .row .content {
     flex: auto;
-    /* flex:1 1 30rem; */
 }
 
 .about .row .content h3 {
@@ -566,30 +541,6 @@ padding:.5rem 0;
     color: var(--primary);
 }
 
-.about .row .progress .bar-1-1 span {
-    width: 90%;
-}
-
-.about .row .progress .bar-1-2 span {
-    width: 75%;
-}
-
-.about .row .progress .bar-1-3 span {
-    width: 80%;
-}
-
-.about .row .progress .bar-2-1 span {
-    width: 95%;
-}
-
-.about .row .progress .bar-2-2 span {
-    width: 89%;
-}
-
-.about .row .progress .bar-2-3 span {
-    width: 75%;
-}
-
 /*======================================================================= Resume (Resume) =--------------------*/
 
 .resume-box .row {
@@ -603,7 +554,6 @@ padding:.5rem 0;
 
 .resume-box .row .progress {
     /* flex:1 1 40rem; */
-    /* flex:1 1; */
     flex-basis: var(--flex-2-col);
 }
 
@@ -635,665 +585,10 @@ padding:.5rem 0;
     border-radius: 5rem;
 }
 
-/* --------- Languege Box ---------- */
-
-.resume-box .lang-box h5 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 1rem;
-    font-weight: 400;
-    margin-bottom: 8px;
-    padding-right: 15px;
-    border-radius: 0.3rem;
-    color: var(--black);
-    box-shadow: var(--box-shadow);
-}
-
-.resume-box .lang-box h5 p {
-    padding: 4px 12px;
-    color: var(--black);
-}
-
-.resume-box .lang-box h5 i {
-    display: inline-block;
-    background: var(--primary);
-    width: 2rem;
-    height: 6px;
-    border-radius: 9px;
-}
-
-.resume-box .lang-box h5 i.diseble {
-    background: #ccc;
-}
-
-/* .resume-box .row .progress .bar-1-1 span{
-width: 90%;
-}
-
-.resume-box .row .progress .bar-1-2 span{
-width: 75%;
-}
-
-.resume-box .row .progress .bar-1-3 span{
-width: 80%;
-}
-
-.resume-box .row .progress .bar-2-1 span{
-width: 95%;
-}
-
-.resume-box .row .progress .bar-2-2 span{
-width: 89%;
-}
-
-.resume-box .row .progress .bar-2-3 span{
-width: 65%;
-} */
-
-/* .services .box-container{
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
-gap:2rem;
-}
-
-.services .box-container .box{
-padding:2rem;
-border-radius: .5rem;
-box-shadow: var(--box-shadow);
-position: relative;
-z-index: 0;
-overflow:hidden;
-}
-
-.services .box-container .box i{
-font-size:4rem;
-padding-bottom: 5rem;
-color:#fff;
-}
-
-.services .box-container .box h3{
-font-size:2rem;
-padding-bottom: 1rem;
-color:var(--black);
-}
-
-.services .box-container .box p{
-font-size:1.4rem;
-line-height: 1.8;
-color:var(--light-color);
-}
-
-.services .box-container .box::before{
-content: '';
-position: absolute;
-top:0; left: 0;
-height: 100%;
-width: 100%;
-background: var(--primary);
-z-index: -1;
-clip-path: circle(9rem at 5% 0%);
-transition: .3s linear;
-}
-
-.services .box-container .box:hover::before{
-clip-path: circle(100%);
-}
-
-.services .box-container .box:hover > *{
-color:#fff;
-} */
-
-/*------------------------------------------*/
-
-.services .row .progress {
-    flex: 1 1 40rem;
-}
-
-.services .row .progress h3 {
-    color: var(--black);
-    font-weight: normal;
-    font-size: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.services .row .progress .bar {
-    box-shadow: var(--box-shadow);
-    border-radius: 5rem;
-    height: 1.5rem;
-    padding: .5rem;
-    margin: 1rem 0;
-}
-
-.services .row .progress .bar span {
-    display: block;
-    height: 100%;
-    background: var(--primary);
-    border-radius: 5rem;
-}
-
-.services .row .progress .bar-1-1 span {
-    width: 90%;
-}
-
-.services .row .progress .bar-1-2 span {
-    width: 75%;
-}
-
-.services .row .progress .bar-1-3 span {
-    width: 80%;
-}
-
-.services .row .progress .bar-2-1 span {
-    width: 95%;
-}
-
-.services .row .progress .bar-2-2 span {
-    width: 89%;
-}
-
-.services .row .progress .bar-2-3 span {
-    width: 65%;
-}
-
-/*======================================================================= PORTFOLIO =--------------------*/
-.portfolio .beport-box {
-    border-radius: 0.5rem;
-    box-shadow: var(--box-shadow);
-    padding: 1rem;
-    display: none;
-}
-
-.portfolio .beport-box .beport-headbox {
-    text-align: center;
-    margin-bottom: 0.8em;
-    font-size: 1.3rem;
-}
-
-/* ------------Old */
-/* .portfolio .box-container{
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
-gap:2rem;
-}
-
-.portfolio .box-container .box{
-height: 25rem;
-border-radius: .5rem;
-overflow:hidden;
-box-shadow: var(--box-shadow);
-position: relative;
-border:1rem solid transparent;
-}
-
-.portfolio .box-container .box img{
-height: 100%;
-width: 100%;
-object-fit: cover;
-}
-
-.portfolio .box-container .box .content{
-position: absolute;
-top:0; left: 0;
-height: 100%;
-width: 100%;
-background: var(--bg-color);
-display: grid;
-place-items: center;
-transform: scale(0);
-}
-
-.portfolio .box-container .box:hover .content{
-transform: scale(1);
-}
-
-.portfolio .box-container .box .content h3{
-font-size: 2.5rem;
-color:var(--black);
-text-transform: uppercase;
-transform: translateY(-5rem);
-opacity: 0;
-transition-delay: .3s;
-}
-
-.portfolio .box-container .box:hover .content h3{
-transform: translateY(0rem);
-opacity: 1;
-} */
-
-/*======================================================================= CONTACT FORM =--------------------*/
-
-.contact form {
-    margin: 1rem auto;
-    max-width: 70rem;
-    border-radius: .5rem;
-    box-shadow: var(--box-shadow);
-    padding: 1rem;
-}
-
-.contact form .box {
-    padding: 0.6rem 1rem;
-    width: 100%;
-    background: none;
-    color: var(--black);
-    font-size: 1.1rem;
-    text-transform: none;
-    margin: .7rem 0;
-    box-shadow: var(--box-shadow);
-    border-radius: .5rem;
-}
-
-.contact form textarea {
-    height: 5rem;
-    resize: none;
-}
-
-.contact form .box:focus {
-    box-shadow: var(--box-shadow-inset);
-}
-
-.credits {
-    font-size: 1rem;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 1rem;
-    border-top: var(--border);
-    color: var(--black);
-}
-
-.credits span a {
-    color: var(--primary);
-}
-
-.credits span a:hover {
-    background-color: var(--primary);
-    color: white;
-    padding: 5px;
-}
-
-/*============================== media queries */
-
-@media (max-width:991px) {
-
-    html {
-        font-size: 55%;
-    }
-
-    body {
-        padding-left: 0;
-    }
-
-    .header {
-        left: -110%;
-    }
-
-    .header.active {
-        left: 0%;
-        transition: .4s linear;
-    }
-
-    #menu-btn {
-        display: initial;
-    }
-
-}
-
-@media (max-width:768px) {
-    html {
-        font-size: 90%;
-    }
-
-    section {
-        min-height: auto;
-        padding: 1rem;
-    }
-
-    .mob-user-head {
-        display: block;
-    }
-
-    #menu-btn,
-    .user {
-        display: none;
-    }
-
-    /* .home .content {flex: auto;} */
-    .header {
-        left: 0;
-        top: unset;
-        bottom: 0;
-        width: 100%;
-        height: auto;
-        padding: 0;
-        box-shadow: 0px 1px 10px 0px #000;
-    }
-
-    /* .header.active{
-left:0%;
-transition: .4s linear;
-} */
-    .header .navbar {
-        padding-top: 0.4rem;
-        display: flex;
-    }
-
-    .header .navbar a {
-        display: inline-flex;
-        flex-flow: column;
-        font-size: 1rem;
-        line-height: 1.5rem;
-        margin: 0;
-        padding: .5rem;
-        flex: auto;
-        border-radius: 0.5rem;
-        margin: 0 0.25rem 0.25rem 0.25rem;
-        box-shadow: var(--box-shadow);
-        /* background-color: var(--bg-color); */
-        transform: translate(0, 1rem);
-    }
-
-    .header .navbar a i.fas {
-        font-size: 1rem;
-    }
-
-    .header .navbar a:hover {
-        box-shadow: var(--box-shadow-inset);
-        color: var(--primary);
-        transform: translate(0, 0);
-    }
-
-    /* .header .navbar a */
-
-    .heading {
-        font-size: 1.5rem;
-    }
-
-    /* .home {padding-bottom: 5rem;} */
-    .home .content h4,
-    .home .content p,
-    .home .content.hero-img {
-        display: none !important;
-    }
-
-    .home .share a {
-        width: 2.5rem;
-    }
-
-    .about .row .box-container .box {
-        flex-basis: 100%;
-    }
-
-    .about .row .box-container .box:nth-child(2) {
-        display: none;
-    }
-
-    .gallery .image-container .image {
-        height: 90px !important;
-        width: 45% !important;
-        margin: 5px !important;
-    }
-
-    .proBar-round {
-        max-width: 25% !important;
-    }
-
-    .resume-box .row .progress,
-    .resume-box .row .work,
-    .home .content {
-        flex-basis: 100% !important;
-    }
-
-    .proBar-inbox {
-        flex-basis: 45% !important;
-    }
-
-    .resume-box .row.pro-skill-row {
-        gap: 0.5em !important;
-        align-items: flex-start !important;
-    }
-
-    .pro-skill-row .digram-box {
-        order: -1;
-        flex-basis: 100% !important;
-    }
-
-    .pro-skill-row .digram-box .circle-diagram {
-        margin: 0 auto;
-        width: 44%;
-    }
-
-    .pro-skill-row .pskill-textbox,
-    .pro-skill-row .pskill-textbox {
-        flex-basis: 48% !important;
-        font-size: 0.8em;
-    }
-
-}
-
-/* @media (max-width:450px){
-} */
-
-/* =================== ADD NEW CSS For Gallary ------------- */
-
-.gallery {
-    /* min-height: 100vh; */
-    /* background:#eee; */
-    padding-bottom: 20px;
-}
-
-.gallery .controls {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 20px 0;
-    list-style: none;
-}
-
-.gallery .controls .buttons {
-    height: auto;
-    width: auto;
-    background: #fff;
-    color: #666;
-    font-size: 1rem;
-    /* line-height: 28px; */
-    border-radius: 4px;
-    cursor: pointer;
-    padding: 5px 7px;
-    margin: 6px;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
-    text-align: center;
-}
-
-.gallery .controls #morePro {
-    border: 1px solid var(--primary);
-    padding: 8px 20px;
-    font-weight: 600;
-}
-
-.gallery .controls .buttons:hover,
-.gallery .controls .buttons.active {
-    background: var(--primary);
-    color: #fff;
-}
-
-.gallery .image-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.gallery .image-container .image {
-    height: 150px;
-    width: 230px;
-    overflow: hidden;
-    border-radius: 6px;
-    /* border:15px solid #fff; */
-    box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
-    margin: 8px;
-}
-
-.gallery .image-container .image img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-.gallery .image-container .image:hover img {
-    transform: scale(1.4);
-}
-
-/* ==================== ADD NEW STYLE ============ */
-/* ------------------------- Roung Progress Bar -------- */
-.roundPbar-box {
-    display: flex;
-    width: 100%;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-.proBar-inbox {
-    flex-basis: 23%;
-    text-align: center;
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
-    box-shadow: var(--box-shadow);
-}
-
-.proBar-inbox:hover {
-    box-shadow: var(--box-shadow-inset);
-}
-
-.proBar-inbox span {
-    display: inline-flex;
-    font-weight: 600;
-    font-size: 1.2rem;
-    color: var(--primary);
-}
-
-.proBar-round {
-    max-width: 90px;
-    margin: 0 auto;
-}
-
-/* @property --percentage {
-syntax: '<number>';
-inherits: true;
-initial-value: 0;
-} */
-[role="progressbar"] {
-    --percentage: var(--value);
-    /* --primary: #369; */
-    --secondary: #adf;
-    /* --size: 100px; */
-    animation: progress 2s 0.5s forwards;
-    width: 100%;
-    aspect-ratio: 1;
-    border-radius: 50%;
-    position: relative;
-    overflow: hidden;
-    display: grid;
-    place-items: center;
-    /* min-width: 100px; */
-    box-shadow: var(--box-shadow);
-}
-
-@keyframes progress {
-    0% {
-        --percentage: 0;
-    }
-
-    100% {
-        --percentage: var(--value);
-    }
-}
-
-[role="progressbar"]::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: conic-gradient(var(--primary) calc(var(--percentage) * 1%), var(--secondary) 0);
-    mask: radial-gradient(white 64%, transparent 0);
-    mask-mode: alpha;
-    -webkit-mask: radial-gradient(#0000 64%, #000 0);
-    -webkit-mask-mode: alpha;
-}
-
-[role="progressbar"]::after {
-    counter-reset: percentage var(--value);
-    content: counter(percentage) '%';
-    font-family: Helvetica, Arial, sans-serif;
-    /* font-size: calc(var(--size) / 5); */
-    font-size: 1.2rem;
-    color: var(--primary);
-    /* position: absolute; */
-    /* top: 20%; */
-}
-
-/* --------------END- Roung Progress Bar -------- */
-
-/* --------------Start- Half Roung Progress Bar -------- */
-.halfR-progress {
-    position: relative;
-    margin: 4px;
-    float: left;
-    text-align: center;
-    color: var(--black);
-}
-
-.halfR-progress .barOverflow {
-    /* Wraps the rotating .bar */
-    position: relative;
-    overflow: hidden;
-    /* Comment this line to understand the trick */
-    width: 180px;
-    height: 90px;
-    /* Half circle (overflow) */
-    margin-bottom: -20%;
-    /* bring the numbers up */
-}
-
-.halfR-progress .halfRbar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 180px;
-    height: 180px;
-    /* full circle! */
-    border-radius: 50%;
-    box-sizing: border-box;
-    border: 1.5rem solid #ccc;
-    /* border: 18px solid #ccc; */
-    border-bottom-color: var(--primary);
-    /* half azure */
-    border-right-color: var(--primary);
-    /* filter: drop-shadow(1px 4px 2px rgb(0 0 0 / 0.5)); */
-}
-
-.halfR-progress span {
-    display: inline;
-    color: inherit;
-    font-weight: inherit;
-    font-size: 1.6rem;
-}
-
-/* --------------End- Half Roung Progress Bar -------- */
 /* ---------------- Experence --------*/
 
 .resume-box .row .work {
-    /* width: 100%; */
-    /* background: #283593; */
     padding: 10px;
-    /* margin: 0 4% 15px 0; */
-    /* box-shadow: var(--box-shadow); */
-    /* border-radius: 0.5rem; */
-    /* flex: 1 1; */
     flex-basis: var(--flex-2-col);
 }
 
@@ -1418,7 +713,6 @@ initial-value: 0;
 
 /* ----------------------- Diagram -- END -------------- */
 /* -----------------------------------End */
-
 .resume-box .row .work small {
     display: block;
     opacity: 0.7;
@@ -1526,3 +820,309 @@ initial-value: 0;
     font-size: 1.2rem;
     color: var(--black);
 }
+
+
+/* --------- Languege Box ---------- */
+.resume-box .lang-box h5 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 8px;
+    padding-right: 15px;
+    border-radius: 0.3rem;
+    color: var(--black);
+    box-shadow: var(--box-shadow);
+}
+
+.resume-box .lang-box h5 p {
+    padding: 4px 12px;
+    color: var(--black);
+}
+
+.resume-box .lang-box h5 i {
+    display: inline-block;
+    background: var(--primary);
+    width: 2rem;
+    height: 6px;
+    border-radius: 9px;
+}
+
+.resume-box .lang-box h5 i.diseble {
+    background: #ccc;
+}
+
+
+/*======================================================================= PORTFOLIO =--------------------*/
+
+/* =================== ADD NEW CSS For Gallary ------------- */
+
+.gallery {
+    padding-bottom: 20px;
+}
+
+.gallery .controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    list-style: none;
+}
+
+.gallery .controls .buttons {
+    height: auto;
+    width: auto;
+    background: #fff;
+    color: #666;
+    font-size: 1rem;
+    /* line-height: 28px; */
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 5px 7px;
+    margin: 6px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+    text-align: center;
+}
+
+.gallery .controls #morePro {
+    border: 1px solid var(--primary);
+    padding: 8px 20px;
+    font-weight: 600;
+}
+
+.gallery .controls .buttons:hover,
+.gallery .controls .buttons.active {
+    background: var(--primary);
+    color: #fff;
+}
+
+.gallery .image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery .image-container .image {
+    height: 150px;
+    width: 230px;
+    overflow: hidden;
+    border-radius: 6px;
+    /* border:15px solid #fff; */
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+    margin: 8px;
+}
+
+.gallery .image-container .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.gallery .image-container .image:hover img {
+    transform: scale(1.4);
+}
+
+/* ----------------- Behance Box */
+.portfolio .beport-box {
+    border-radius: 0.5rem;
+    box-shadow: var(--box-shadow);
+    padding: 1rem;
+    display: none;
+}
+
+.portfolio .beport-box .beport-headbox {
+    text-align: center;
+    margin-bottom: 0.8em;
+    font-size: 1.3rem;
+}
+
+/*======================================================================= CONTACT FORM =--------------------*/
+
+.contact form {
+    margin: 1rem auto;
+    max-width: 70rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    padding: 1rem;
+}
+
+.contact form .box {
+    padding: 0.6rem 1rem;
+    width: 100%;
+    background: none;
+    color: var(--black);
+    font-size: 1.1rem;
+    text-transform: none;
+    margin: .7rem 0;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+}
+
+.contact form textarea {
+    height: 5rem;
+    resize: none;
+}
+
+.contact form .box:focus {
+    box-shadow: var(--box-shadow-inset);
+}
+
+.credits {
+    font-size: 1rem;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-top: var(--border);
+    color: var(--black);
+}
+
+.credits span a {
+    color: var(--primary);
+}
+
+/* .credits span a:hover {
+    background-color: var(--primary);
+    color: white;
+    padding: 5px;
+} */
+
+/*============================== media queries */
+
+@media (max-width:991px) {
+
+    html { font-size: 55%;}
+    body {padding-left: 0;}
+
+    .header {left: -110%;}
+    .header.active {left: 0%; transition: .4s linear;}
+    #menu-btn { display: initial;}
+
+}
+
+@media (max-width:768px) {
+    html {font-size: 90%;}
+
+    section { min-height: auto; padding: 1rem;}
+    .mob-user-head {display: block;}
+
+    #menu-btn,
+    .user {display: none;}
+
+    /* .home .content {flex: auto;} */
+    .header {
+        left: 0;
+        top: unset;
+        bottom: 0;
+        width: 100%;
+        height: auto;
+        padding: 0;
+        box-shadow: 0px 1px 10px 0px #000;
+    }
+
+    .header .navbar {
+        padding-top: 0.4rem;
+        display: flex;
+    }
+
+    .header .navbar a {
+        display: inline-flex;
+        flex-flow: column;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        margin: 0;
+        padding: .5rem;
+        flex: auto;
+        border-radius: 0.5rem;
+        margin: 0 0.25rem 0.25rem 0.25rem;
+        box-shadow: var(--box-shadow);
+        /* background-color: var(--bg-color); */
+        transform: translate(0, 1rem);
+    }
+
+    .header .navbar a i.fas {
+        font-size: 1rem;
+    }
+
+    .header .navbar a:hover {
+        box-shadow: var(--box-shadow-inset);
+        color: var(--primary);
+        transform: translate(0, 0);
+    }
+
+    /* .header .navbar a */
+
+    .heading {
+        font-size: 1.5rem;
+    }
+
+    /* .home {padding-bottom: 5rem;} */
+    .home .content h4,
+    .home .content p,
+    .home .content.hero-img {
+        display: none !important;
+    }
+
+    .home .share a {
+        width: 2.5rem;
+    }
+
+    .about .row .box-container .box {
+        flex-basis: 100%;
+    }
+
+    .about .row .box-container .box:nth-child(2) {
+        display: none;
+    }
+
+    .gallery .image-container .image {
+        height: 90px !important;
+        width: 45% !important;
+        margin: 5px !important;
+    }
+
+    .proBar-round {
+        max-width: 25% !important;
+    }
+
+    .resume-box .row .progress,
+    .resume-box .row .work,
+    .home .content {
+        flex-basis: 100% !important;
+    }
+
+    .proBar-inbox {
+        flex-basis: 45% !important;
+    }
+
+    .resume-box .row.pro-skill-row {
+        gap: 0.5em !important;
+        align-items: flex-start !important;
+    }
+
+    .pro-skill-row .digram-box {
+        order: -1;
+        flex-basis: 100% !important;
+    }
+
+    .pro-skill-row .digram-box .circle-diagram {
+        margin: 0 auto;
+        width: 44%;
+    }
+
+    .pro-skill-row .pskill-textbox,
+    .pro-skill-row .pskill-textbox {
+        flex-basis: 48% !important;
+        font-size: 0.8em;
+    }
+
+}
+
+/* @media (max-width:450px){
+} */
+
+/* ==================== Media Query END ============ */
+
+
