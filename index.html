@@ -330,7 +330,7 @@
                 <li class="buttons" data-filter="port-app">App</li>
                 <li class="buttons" data-filter="port-graphic">Graphics</li>
                 <!-- <li class="buttons" id="morePro"> All projets </li> -->
-                <li class="buttons" data-filter="all-pro"> All projets </li>
+                <li class="buttons" id="morePro" data-filter="all-pro"> All projets </li>
             </ul>
             <div class="image-container">
                 <a href="image/img-1.jpg" class="image port-uiux">
@@ -479,12 +479,12 @@
                 }
             });
 
-            // $("#morePro").click(function () {
-            //     $(".beport-box").show();
-            // });
-            // $("#morePro").siblings().click(function () {
-            //     $(".beport-box").hide();
-            // });
+            $("#morePro").click(function () {
+                $(".beport-box").show();
+            });
+            $("#morePro").siblings().click(function () {
+                $(".beport-box").hide();
+            });
 
             // ---------Behance Script ---------
             // $('.behance-container').embedBehance({
