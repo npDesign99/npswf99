@@ -1061,11 +1061,9 @@ section {
 
     /* .header .navbar a */
 
-    .heading {
-        font-size: 1.5rem;
-    }
+    .heading {font-size: 1.5rem;}
 
-    /* .home {padding-bottom: 5rem;} */
+    .home {padding-bottom: 5rem;}
     .home .content h4,
     .home .content p,
     .home .content.hero-img {
