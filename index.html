@@ -44,11 +44,47 @@
 
         <nav class="navbar">
             <a href="#"><i class="fas fa-home"></i> home</a>
-            <a href="#about"><i class="fas fa-user-tie"></i></i> about</a>
+            <a href="#about"><i class="fas fa-user-tie"></i> about</a>
             <a href="#resume"><i class="fas fa-file-alt"></i> Resume</a>
             <a href="#work"><i class="fas fa-eye"></i> Work</a>
             <a href="#contact"><i class="fas fa-mobile-alt"></i> contact</a>
         </nav>
+
+        <div class="npmob-nav">
+            <ul class="listWrap">
+              <li class="list active">
+                <a href="#">
+                    <i class="fas fa-home"></i>
+                  <span class="text">Home</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="#about">
+                    <i class="fas fa-user-tie"></i>
+                  <span class="text">About</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="#resume">
+                    <i class="fas fa-file-alt"></i>
+                  <span class="text">Resume</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="#work">
+                    <i class="fas fa-eye"></i>
+                  <span class="text">Work</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="#contact">
+                    <i class="fas fa-mobile-alt"></i>
+                  <span class="text">Contact</span>
+                </a>
+              </li>
+              <li class="indicator"></li>
+            </ul>
+          </div>
 
     </header>
 
@@ -423,11 +459,11 @@
 
         <div class="beport-box">
             <div class="beport-headbox">
-                Click hear For All work Portfolio <br>
-                <a href="https://www.behance.net/npDesign99" target="_blank">Behance Portfolio</a>
+                For, All work Portfolio<br>
+                <a href="https://www.behance.net/npDesign99" target="_blank">Click here(Behance)</a>
             </div>
             <div class="beport-headbox">
-                <a href="https://www.behance.net/npDesign99" target="_blank"><img class="icon" src="image/portfolio-icon.png"></a>
+                <a href="https://www.behance.net/npDesign99" target="_blank"><img class="icon" src="image/Port-icon.svg"></a>
             </div>
             <!-- <div class="beport-contbox">
                 <div class="behance-container"></div>
@@ -457,7 +493,7 @@
             <input type="submit" value="send message" class="btn">
         </form>
 
-        <div class="credits"> created by <span><a href="#">npDesign99</a></span> | all rights reserved 2021</div>
+        <!-- <div class="credits"> created by <span><a href="#">npDesign99</a></span> | all rights reserved 2021</div> -->
 
     </section>
 
@@ -534,6 +570,21 @@
 
 
         });
+
+// --------------------------- Mobile Menu
+
+const listItem = document.querySelectorAll('.list');
+
+    function activateLink() {
+      listItem.forEach( item => {
+        item.classList.remove('active');
+      });
+      this.classList.add('active');
+    }
+    
+    listItem.forEach( item => {
+      item.addEventListener('click', activateLink);
+    });
 
     </script>
 
