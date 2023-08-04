@@ -339,6 +339,7 @@ section {
         background: var(--primary);
         transition: 0.3s;
         z-index: 0;
+        position: relative;
    }
   .npmob-nav .listWrap li .indicator:before, .npmob-nav .listWrap li .indicator:after {
       content: '';
@@ -350,12 +351,12 @@ section {
       background: transparent;
  }
   .npmob-nav .listWrap li .indicator:after {
-    right: -5px; top: 7px;
+    right: -23px; top: 0px;
     box-shadow: -1px 10px 0 0 var(--bg-color);
     border-bottom-left-radius: 20px;
  }
   .npmob-nav .listWrap li .indicator:before {
-    left: -5px; top: 7px;
+    left: -23px; top: 0px;
     box-shadow: 1px 10px 0 0 var(--bg-color);
     border-bottom-right-radius: 20px;
  }
