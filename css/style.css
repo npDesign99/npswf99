@@ -350,12 +350,12 @@ section {
       background: transparent;
  }
   .npmob-nav .listWrap li .indicator:after {
-    right: -1px; top: 7px;
+    right: -5px; top: 7px;
     box-shadow: -1px 10px 0 0 var(--bg-color);
     border-bottom-left-radius: 20px;
  }
   .npmob-nav .listWrap li .indicator:before {
-    left: -1px; top: 7px;
+    left: -5px; top: 7px;
     box-shadow: 1px 10px 0 0 var(--bg-color);
     border-bottom-right-radius: 20px;
  }
@@ -1229,7 +1229,7 @@ section {
         flex-basis: 100% !important;
     }
     .resume-box .pro-skill-row .pskill-textbox ul li { padding: 0.3em 0.2em;}
-    
+
     .proBar-inbox {
         flex-basis: 45% !important;
     }
