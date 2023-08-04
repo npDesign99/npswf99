@@ -351,12 +351,12 @@ section {
       background: transparent;
  }
   .npmob-nav .listWrap li .indicator:after {
-    right: -23px; top: 0px;
+    right: -22px; top: 1px;
     box-shadow: -1px 10px 0 0 var(--bg-color);
     border-bottom-left-radius: 20px;
  }
   .npmob-nav .listWrap li .indicator:before {
-    left: -23px; top: 0px;
+    left: -22px; top: 1px;
     box-shadow: 1px 10px 0 0 var(--bg-color);
     border-bottom-right-radius: 20px;
  }
