@@ -1228,7 +1228,8 @@ section {
     .home .content {
         flex-basis: 100% !important;
     }
-
+    .resume-box .pro-skill-row .pskill-textbox ul li { padding: 0.3em 0.2em;}
+    
     .proBar-inbox {
         flex-basis: 45% !important;
     }
