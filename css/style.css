@@ -335,7 +335,7 @@ section {
       width: 3.7rem;
         height: 3.7rem;
         border-radius: 50%;
-        border: 7px solid var(--bg-color);
+        border: 6px solid var(--bg-color);
         background: var(--primary);
         transition: 0.3s;
         z-index: 0;
